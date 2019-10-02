@@ -1,0 +1,25 @@
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+bottom: .5em;
+}
+
+/* Hide the info and filter elements */
+.dataTables_info, .dataTables_filter { display: none; }
+
+/* Set Custom colors for header row */
+thead { background-color: #000; color: #fff; }
+
+/* Add dollar sign before salaries */
+.salary:before,
+.salary-total:before {
+  content: "$";
+  margin-right: .25rem;
+}
